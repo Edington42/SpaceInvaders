@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.GameObjects.Ship.ShipManager">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <Members>
+      <Method Name="GetShipEngineState" Hidden="true" />
+      <Method Name="GetShipWeaponState" Hidden="true" />
+      <Field Name="pDefaultEngineState" Hidden="true" />
+      <Field Name="pLeftEngineState" Hidden="true" />
+      <Field Name="pNotReady" Hidden="true" />
+      <Field Name="pReady" Hidden="true" />
+      <Field Name="pRightEngineState" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.GameObjects.Ship.ShipManager.WeaponState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameObjects\Ship\ShipManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="SpaceInvaders.GameObjects.Ship.ShipManager.EngineState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameObjects\Ship\ShipManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="instance" Type="SpaceInvaders.GameObjects.Ship.ShipManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.062" Y="2.5" />
+        <Point X="5.062" Y="2.125" />
+        <Point X="3.875" Y="2.125" />
+        <Point X="3.875" Y="3.787" />
+        <Point X="4.25" Y="3.787" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AYAAAAACAAAAIAAAAAAAAAACBABAAACAQAgCAQIAAAI=</HashCode>
+      <FileName>GameObjects\Ship\ShipManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pShip" />
+      <Field Name="pMissile" />
+      <Field Name="instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.Ship.Ship" Collapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAADAAAAAABAAEAAAAAAAQAIAIQAAQAAAFAAA=</HashCode>
+      <FileName>GameObjects\Ship\Ship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.MissileObject" Collapsed="true">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Missile\MissileObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

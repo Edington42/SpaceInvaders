@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.Scenes.ScenePlay" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEQKAAAAlAAwAAAIEAAAAAAAgAQABIAAAEAAAACAA=</HashCode>
+      <FileName>Scenes\ScenePlay.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poLayerManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Scenes.SceneContext" Collapsed="true">
+    <Position X="2" Y="2" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.Scenes.SceneContext.Scene" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Scenes\SceneContext.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAABEAAAAAAAAgQAAEAAAAAAQBAAAEIAAAAAAAQAAA=</HashCode>
+      <FileName>Scenes\SceneContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poScenePlay" />
+      <Field Name="pSceneState" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Scenes.SceneState">
+    <Position X="4.25" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="Initialize" Hidden="true" />
+      <Method Name="TransitionFrom" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAEAAwAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\SceneState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Scenes.SceneSelect" Collapsed="true">
+    <Position X="4.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAFAAwAAAAAAAAAAAAAAQABAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\SceneSelect.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poLayerManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Layer.LayerManager">
+    <Position X="7.25" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="CompareNodes" Hidden="true" />
+      <Method Name="GetBlank" Hidden="true" />
+      <Field Name="GROWTH_SIZE" Hidden="true" />
+      <Method Name="LayerManager" Hidden="true" />
+      <Field Name="poNodeCompare" Hidden="true" />
+      <Field Name="RESERVE_SIZE" Hidden="true" />
+      <Method Name="UpdatePriority" Hidden="true" />
+      <Method Name="Wash" Hidden="true" />
+    </Members>
+    <AssociationLine Name="pActiveMan" Type="SpaceInvaders.Layer.LayerManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.782" Y="3" />
+        <Point X="7.782" Y="2.625" />
+        <Point X="9.125" Y="2.625" />
+        <Point X="9.125" Y="3.625" />
+        <Point X="8.75" Y="3.625" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABIAAAAAAAAAAgQAAAAABgACBAAIwAAAAAQAAICAQAA=</HashCode>
+      <FileName>Layer\LayerManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pActiveMan" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

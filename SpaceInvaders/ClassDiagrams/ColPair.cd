@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.Collision.ColPairManager">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <Members>
+      <Method Name="ColPairManager" Hidden="true" />
+      <Method Name="CompareNodes" Hidden="true" />
+      <Method Name="Destroy" Hidden="true" />
+      <Method Name="Find" Hidden="true" />
+      <Method Name="GetActiveColPair" Hidden="true" />
+      <Method Name="GetBlank" Hidden="true" />
+      <Field Name="GROWTH_SIZE" Hidden="true" />
+      <Field Name="pActiveColPair" Hidden="true" />
+      <Field Name="pActiveMan" Hidden="true" />
+      <Field Name="poNodeCompare" Hidden="true" />
+      <Field Name="RESERVE_SIZE" Hidden="true" />
+      <Method Name="SetActive" Hidden="true" />
+      <Method Name="Wash" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BBIAAAAAACAIAAAAAgAAAgACBABIwAAAAEAAAICAQAA=</HashCode>
+      <FileName>Collision\ColPairManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Manager.Manager" Collapsed="true">
+    <Position X="2.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAhAAAAAABAAApA5AIiAAigQAAgAIBAAACkAQA=</HashCode>
+      <FileName>Manager\Manager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pActive" />
+      <Field Name="pReserve" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Collision.ColPair">
+    <Position X="6" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="ToDefault" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.Collision.ColPair.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Collision\ColPair.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAABABAAgAAAASAAAAEAAAACAAAAAAEAAA=</HashCode>
+      <FileName>Collision\ColPair.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="treeA" />
+      <Field Name="treeB" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.DLink" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAIAAAAAQAABAhAAAAAAAQAAAICAAAABFAAA=</HashCode>
+      <FileName>Manager\DLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.GameObject" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.GameObjects.GameObject.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameObjects\GameObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AoQAAAAAEBAAAAAAAAIAAAAAABAEAAAAAABiAAAAAAE=</HashCode>
+      <FileName>GameObjects\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poColObj" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Collision.ColObject" Collapsed="true">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABAAEAAAAAAAAAACAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Collision\ColObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

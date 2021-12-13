@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.Collision.ColPairSubject">
+    <Position X="2.75" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="GetByName" Hidden="true" />
+      <Method Name="MatchName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAEIAAAAAAAAAAAAAAIAAAAAAAAAAAAg=</HashCode>
+      <FileName>Collision\ColPairSubject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Observer.Subject">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAACAABAAAAIAAAABAAAAAAABAAAA=</HashCode>
+      <FileName>Observer\Subject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pHead" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.DLink" Collapsed="true">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAIAAAAAQAABAhAAAAAAAQAAAICAAAABFAAA=</HashCode>
+      <FileName>Manager\DLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Observer.Observer">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <Members>
+      <Method Name="ToDefault" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAQAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Observer\Observer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pSubject" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Observer.SplatObserver">
+    <Position X="6.25" Y="4" Width="1.5" />
+    <Members>
+      <Field Name="layerName" Hidden="true" />
+      <Method Name="Print" Hidden="true" />
+      <Field Name="rootName" Hidden="true" />
+      <Method Name="SplatObserver" Hidden="true" />
+      <Field Name="spriteName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAgAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAEAAA=</HashCode>
+      <FileName>Observer\SplatObserver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Collision.ColPair" Collapsed="true" HideInheritanceLine="true">
+    <Position X="0.75" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.Collision.ColPair.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Collision\ColPair.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAABABAAgAAAASAAAAEAAAACAAAAAAEAAA=</HashCode>
+      <FileName>Collision\ColPair.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="subject" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

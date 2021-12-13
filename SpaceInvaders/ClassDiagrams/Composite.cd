@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.GameObjects.Shield.ShieldGroup">
+    <Position X="4.25" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="ShieldGroup" Hidden="true" />
+      <Method Name="VisitBomb" Hidden="true" />
+      <Method Name="VisitBombGroup" Hidden="true" />
+      <Method Name="VisitColumn" Hidden="true" />
+      <Method Name="VisitGrid" Hidden="true" />
+      <Method Name="VisitMissileGroup" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAQAAAAEBAAAAAAAAAAAAAAAAgAAAAAAACA=</HashCode>
+      <FileName>GameObjects\Shield\ShieldGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Composite.Composite">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <Members>
+      <Field Name="numChildren" Hidden="true" />
+      <Method Name="ToDefault" Hidden="true" />
+    </Members>
+    <AssociationLine Name="poHead" Type="SpaceInvaders.DLink" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="3.875" />
+        <Point X="1.5" Y="3.875" />
+        <Point X="1.5" Y="2.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="poTail" Type="SpaceInvaders.DLink" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="3.625" />
+        <Point X="2" Y="3.625" />
+        <Point X="2" Y="2.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgYAgAAAAAAAAAAAIAIABAAAAAAAAAACAAAAIAAEAAA=</HashCode>
+      <FileName>Composites\Composite.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poHead" />
+      <Field Name="poTail" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.GameObject">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="backPointer" Hidden="true" />
+      <Method Name="GameObject" Hidden="true" />
+      <Method Name="GetColObject" Hidden="true" />
+      <Method Name="GetRoot" Hidden="true" />
+      <Field Name="markedForDeath" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Method Name="ToDefault" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.GameObjects.GameObject.Name" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameObjects\GameObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AoQAAAAAEBAAAAAAAAIAAAAAABAEAAAAAABiAAAAAAE=</HashCode>
+      <FileName>GameObjects\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.Shield.ShieldBrick" Collapsed="true">
+    <Position X="8.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAQABAAEDAAIAAAAAAAAAAAAAgAAAAAAACA=</HashCode>
+      <FileName>GameObjects\Shield\ShieldBrick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.Shield.ShieldGrid" Collapsed="true">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <InheritanceLine Type="SpaceInvaders.Composite.Composite" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="5.637" />
+        <Point X="5.5" Y="5.808" />
+        <Point X="2.938" Y="5.808" />
+        <Point X="2.938" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAQAAAAEBAAAAAAAAAAQAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Shield\ShieldGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.Shield.ShieldColumn" Collapsed="true">
+    <Position X="6.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAQAAAAEBAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Shield\ShieldColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.DLink" Collapsed="true">
+    <Position X="1.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAIAAAAAQAABAhAAAAAAAQAAAICAAAABFAAA=</HashCode>
+      <FileName>Manager\DLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Composite.Leaf">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <Members>
+      <Method Name="BaseSet" Hidden="true" />
+      <Method Name="Leaf" Hidden="true" />
+      <Field Name="pProxySprite" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAYAgAAAAAAAAIAAAAIABAAAAAAAAAAgAAAIAAAEAAA=</HashCode>
+      <FileName>Composites\Leaf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Composite.Component">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAhAAAAAAIAAAAAAAABAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Composites\Component.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Collision.ColVisitor" Collapsed="true">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIQAAAAAAIQAQAAFDISIAAAAAgAAAAAAAiEAAAAAACA=</HashCode>
+      <FileName>Collision\ColVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.SpaceInvaders">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <Members>
+      <Field Name="glyphManager" Hidden="true" />
+    </Members>
+    <AssociationLine Name="spriteManager" Type="SpaceInvaders.Sprite.GameSpriteManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.406" Y="2" />
+        <Point X="4.406" Y="1.816" />
+        <Point X="7.938" Y="1.816" />
+        <Point X="7.938" Y="1.441" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="imageManager" Type="SpaceInvaders.Images.ImageManager" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="3.031" />
+        <Point X="6.266" Y="3.031" />
+        <Point X="6.266" Y="2.123" />
+        <Point X="9.344" Y="2.123" />
+        <Point X="9.344" Y="1.441" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAEIwAAAAAAAAAAAAAAAAAAEAAAAAAAIAQ=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pSceneContext" />
+      <Field Name="textureManager" />
+      <Field Name="spriteManager" />
+      <Field Name="imageManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Scenes.SceneContext" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="SpaceInvaders.Scenes.SceneContext.Scene" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Scenes\SceneContext.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAABEAAAAAAAAgQAAEAAAAAAQBAAAEIAAAAAAAQAAA=</HashCode>
+      <FileName>Scenes\SceneContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poScenePlay" />
+      <Field Name="pSceneState" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.TextureManager" Collapsed="true">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAAAAAAAAAAAAAAAAAgACBABIwAAAAAAAAACAAAA=</HashCode>
+      <FileName>Texture\TextureManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Sprite.GameSpriteManager" Collapsed="true">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAAAAAAAIAAAAAAAAAgACBABIwAAAAAAAAACAIAA=</HashCode>
+      <FileName>Sprite\GameSpriteManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Images.ImageManager" Collapsed="true">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAAAAAAAMAAAAAAAAAgACBABIwAAAAAAAAACAAAA=</HashCode>
+      <FileName>Images\ImageManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Scenes.ScenePlay">
+    <Position X="9.75" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="ScenePlay" Hidden="true" />
+      <Method Name="TransitionFrom" Hidden="true" />
+      <Method Name="TransitionTo" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="poColPairManager" Type="SpaceInvaders.Collision.ColPairManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.938" Y="4.877" />
+        <Point X="10.938" Y="5.058" />
+        <Point X="13.5" Y="5.058" />
+        <Point X="13.5" Y="5.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="poTimerManager" Type="SpaceInvaders.Timer.TimerManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.188" Y="4.877" />
+        <Point X="10.188" Y="5.058" />
+        <Point X="4.344" Y="5.058" />
+        <Point X="4.344" Y="5.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQEQKAAAAlAAwAAAIEAAAAAAAgAQABIAAAEAAAACAA=</HashCode>
+      <FileName>Scenes\ScenePlay.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poGameTreeManager" />
+      <Field Name="poColPairManager" />
+      <Field Name="poTimerManager" />
+      <Field Name="poLayerManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.GameTreeManager">
+    <Position X="9.75" Y="5.25" Width="1.75" />
+    <Members>
+      <Method Name="Attach" Hidden="true" />
+      <Method Name="CompareNodes" Hidden="true" />
+      <Method Name="Find" Hidden="true" />
+      <Method Name="GameTreeManager" Hidden="true" />
+      <Method Name="GetBlank" Hidden="true" />
+      <Method Name="GetInstance" Hidden="true" />
+      <Method Name="SetActive" Hidden="true" />
+      <Method Name="Wash" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABQAAAAAAAAAAAAAAAAAAgACBIAIwAAAAAAAAICAQAA=</HashCode>
+      <FileName>GameObjects\GameTreeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Collision.ColPairManager">
+    <Position X="12.75" Y="5.25" Width="1.5" />
+    <Members>
+      <Method Name="Add" Hidden="true" />
+      <Method Name="ColPairManager" Hidden="true" />
+      <Method Name="CompareNodes" Hidden="true" />
+      <Method Name="Find" Hidden="true" />
+      <Method Name="GetActiveColPair" Hidden="true" />
+      <Method Name="GetBlank" Hidden="true" />
+      <Method Name="GetInstance" Hidden="true" />
+      <Method Name="ProcessCol" Hidden="true" />
+      <Method Name="SetActive" Hidden="true" />
+      <Method Name="Wash" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BBIAAAAAACAAAAAAAgAAAgACBAAIwAAAAEAAAICAQAA=</HashCode>
+      <FileName>Collision\ColPairManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Timer.TimerManager">
+    <Position X="3.75" Y="5.25" Width="1.5" />
+    <Members>
+      <Method Name="Add" Hidden="true" />
+      <Method Name="CompareNodes" Hidden="true" />
+      <Method Name="Find" Hidden="true" />
+      <Method Name="GetBlank" Hidden="true" />
+      <Method Name="GetCurrTime" Hidden="true" />
+      <Method Name="GetInstance" Hidden="true" />
+      <Method Name="Pause" Hidden="true" />
+      <Method Name="Resume" Hidden="true" />
+      <Method Name="SetActive" Hidden="true" />
+      <Method Name="TimerManager" Hidden="true" />
+      <Method Name="Wash" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABYkAAAAAAAAAAAAAAAAAgACBAAIwAAAAAAAAIiAwQA=</HashCode>
+      <FileName>Timer\TimerManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Layer.LayerManager">
+    <Position X="12" Y="1" Width="1.5" />
+    <Members>
+      <Method Name="Add" Hidden="true" />
+      <Method Name="AttachToLayer" Hidden="true" />
+      <Method Name="CompareNodes" Hidden="true" />
+      <Method Name="Find" Hidden="true" />
+      <Method Name="GetBlank" Hidden="true" />
+      <Method Name="GetInstance" Hidden="true" />
+      <Field Name="GROWTH_SIZE" Hidden="true" />
+      <Method Name="LayerManager" Hidden="true" />
+      <Method Name="Remove" Hidden="true" />
+      <Method Name="SetActive" Hidden="true" />
+      <Method Name="UpdatePriority" Hidden="true" />
+      <Method Name="Wash" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABIAAAAAAAAAAgQAAAAABgACBAAIwAAAAAQAAICAQAA=</HashCode>
+      <FileName>Layer\LayerManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Scenes.SceneState" Collapsed="true">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAEAAwAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\SceneState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
